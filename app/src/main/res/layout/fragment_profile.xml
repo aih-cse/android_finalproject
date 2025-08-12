@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/arrow_green"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="ملفي الشخصي"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/user_1" />
+
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/txt_bg"
+                android:drawableStart="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/almarai"
+                android:hint="الاسم"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textDirection="rtl"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/txt_bg"
+                android:drawableStart="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/almarai"
+                android:hint="الايميل"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textDirection="rtl"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/txt_bg"
+                android:drawableStart="@drawable/phone_icon"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/almarai"
+                android:hint="الهاتف"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textDirection="rtl"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/txt_bg"
+                android:orientation="horizontal"
+                android:textDirection="rtl">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="96dp"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/calendar_icon"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/almarai"
+                    android:layout_marginStart="8dp"
+                    android:text="تاريخ الميلاد"
+                    android:textColor="#7A7A7A"
+                    android:textSize="18sp"
+                    tools:ignore="MissingConstraints" />
+
+                <DatePicker
+                    android:id="@+id/bod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    android:endYear="2010"
+                    android:startYear="1970"
+                    tools:ignore="MissingConstraints" />
+            </GridLayout>
+
+
+            <Button
+                android:id="@+id/give_me_book_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/txt_bg"
+                android:backgroundTint="#009883"
+                android:fontFamily="@font/almarai"
+                android:text="تعديل"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

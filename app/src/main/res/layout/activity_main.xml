@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/app_bg"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        </FrameLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="17dp"
+            android:paddingLeft="17dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                >
+
+                <Button
+                    android:id="@+id/home_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="الرئيسية"
+                    android:drawableTop="@drawable/home_icon_green"
+                    android:background="@color/white"
+                    android:padding="15dp"
+                    android:fontFamily="@font/almarai"
+                    android:layout_weight="1"
+                    android:textColor="@color/status_bar"
+                    android:textSize="15sp"
+                    />
+
+                <Button
+                    android:id="@+id/cart_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="السلة"
+                    android:drawableTop="@drawable/cart_icon"
+                    android:background="@color/white"
+                    android:padding="15dp"
+                    android:fontFamily="@font/almarai"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    />
+
+                <Button
+                    android:id="@+id/my_lib_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="مكتبتي"
+                    android:drawableTop="@drawable/my_lib_icon"
+                    android:background="@color/white"
+                    android:padding="15dp"
+                    android:fontFamily="@font/almarai"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    />
+
+                <Button
+                    android:id="@+id/user_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="ملفي"
+                    android:drawableTop="@drawable/user_icon_gray"
+                    android:background="@color/white"
+                    android:padding="15dp"
+                    android:fontFamily="@font/almarai"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

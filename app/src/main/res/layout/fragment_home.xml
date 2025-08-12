@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/home_header">
+
+                <LinearLayout
+                    android:id="@+id/liner_layout_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/search_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/search"
+                        android:padding="7dp"
+                        android:src="@drawable/search_icon" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/almarai"
+                        android:text="ماذا تريد أن تقرأ ؟؟"
+                        android:textColor="@color/white"
+                        android:textSize="48sp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_layout_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/liner_layout_1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+
+                    >
+
+                    <Button
+                        android:id="@+id/home_1"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_buttons_on_click"
+                        android:fontFamily="@font/almarai"
+                        android:text="اخترنا لك"
+                        android:textColor="#363636"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/home_2"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_buttons"
+                        android:fontFamily="@font/almarai"
+                        android:text="الشائع"
+                        android:textColor="#7A7A7A"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/home_3"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_buttons"
+                        android:fontFamily="@font/almarai"
+                        android:text="موصى به"
+                        android:textColor="#7A7A7A"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/header_card_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/liner_layout_2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/txt_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/almarai"
+                    android:text="الاختيار اليومي"
+                    android:textColor="#363636"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txt_3"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/daily_chhose_bg"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/daily_image"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image_test" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layoutDirection="rtl">
+
+
+                        <TextView
+                            android:id="@+id/daily_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/almarai"
+                            android:gravity="center"
+                            android:text="ما وراء الطبيعة"
+                            android:textAlignment="center"
+                            android:textColor="#363636"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/daily_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/almarai"
+                            android:gravity="center"
+                            android:text="مارك الن"
+                            android:textAlignment="center"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toBottomOf="@+id/daily_title" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintTop_toBottomOf="@+id/daily_author">
+
+                            <TextView
+                                android:id="@+id/daily_rate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rate"
+                                android:backgroundTint="#FFF9E6"
+                                android:drawableStart="@drawable/star"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="4.5"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/daily_views"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rate"
+                                android:backgroundTint="#E6F6F4"
+                                android:drawableStart="@drawable/eye"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="345"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/daily_reds"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rate"
+                                android:backgroundTint="#D9F2EF"
+                                android:drawableStart="@drawable/books_read"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="120"
+                                android:textAlignment="center" />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="24dp">
+
+                <TextView
+                    android:id="@+id/txt_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/almarai"
+                    android:text="الجديد من الكتب"
+                    android:textColor="#363636"
+                    android:textSize="24sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/new_books_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txt_4"
+                    android:layout_marginTop="20dp" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/give_me_book_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/txt_bg"
+                android:backgroundTint="#009883"
+                android:fontFamily="@font/almarai"
+                android:text="اقترح كتاب"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
