@@ -48,3 +48,21 @@ The **BookStore** app displays a right-to-left Arabic UI, with a main feed (hori
 
 **ScreenShots**
 
+<p align="center">
+  <img src="screenshots/splash.jpg" alt="Login Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/login.jpg" alt="Main Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/signup.jpg" alt="Lessons Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/main_1.jpg" alt="Lessons Screen" width="250" style="margin: 10px;"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/main_2.jpg" alt="Videos Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/main_3.jpg" alt="About Me Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/book_detailes.jpg" alt="Lessons Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/book_detailes_2.jpg" alt="Lessons Screen" width="250" style="margin: 10px;"/>
+</p>
+<p align="center">
+  <img src="screenshots/cart.jpg" alt="Videos Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/my_lib.jpg" alt="About Me Screen" width="250" style="margin: 10px;"/>
+  <img src="screenshots/profile.jpg" alt="Lessons Screen" width="250" style="margin: 10px;"/>
+</p>
